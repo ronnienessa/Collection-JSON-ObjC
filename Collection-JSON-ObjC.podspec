@@ -8,7 +8,10 @@ Pod::Spec.new do |s|
   s.author       = { "Chris Searle" => "chris@chrissearle.org" }
   s.source       = { :git => "https://github.com/chrissearle/Collection-JSON-ObjC.git", :tag => "1.0.1" }
 
-  s.platform     = :ios, '6.0'
+  spec.ios.deployment_target = "6.0"
+  spec.tvos.deployment_target = "9.0"
+  spec.osx.deployment_target = "10.10"
+  spec.watchos.deployment_target = "2.0"
 
   s.source_files = '*.{h,m}'
 
